@@ -1,0 +1,100 @@
+body {
+    background-color: #043414;
+}
+a:hover {color: #ffffff}
+@font-face{
+    src: url(Winkle-Regular.ttf);
+    font-family: wrinkle;
+}
+form{
+    position: relative;
+    top:-30px;
+    color: white;
+    font-family: wrinkle;
+    font-size: 20px;
+}
+form input{
+    color: #043414;
+    font-size: 15px;
+}
+p {
+    position: relative;
+    top:-30px;
+    color: white;
+    font-family: wrinkle;
+    font-size: 20px;
+}
+h1{
+    color:#FFFFFF;
+    font-family: wrinkle;
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    color:#FFFFFF;
+    font-family: wrinkle;
+    font-size: 30px;
+}
+table{
+    border-collapse: collapse;
+    /* make the top left and right rounded */
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+table th{
+    background-color: #FBB5D3;
+    color: #043414;
+    text-align: center;
+    font-family: wrinkle;
+    padding: 10px 12px;
+}
+/* target to odd rows of the table */
+table tbody tr:nth-of-type(odd){
+    background-color: #CEBFD9;
+}
+/* target to the last row of the table */
+table tbody tr:last-of-type{
+    border-bottom: 2px solid #FBB5D3;
+}
+td{
+    color: white;
+    font-family: wrinkle;
+    padding: 12px 15px;
+}
+a {
+    color:white;
+    font-family: wrinkle;
+}
+.title {
+    text-align: center;
+    font-family: wrinkle;
+    font-size: 50px;
+}
+.title a{
+    color: white;
+    text-decoration: none;
+}
+.bear{
+    text-align: center;
+}
+.bear img{
+    position: relative;
+    top:-20px;
+    width: 150px;
+    height: auto;
+}
+.bear img:hover{
+    -webkit-animation:shake 1s ease-in-out 
+    .1s infinite alternate;
+}
+@-webkit-keyframes shake{
+    from{
+        -webkit-transform: rotate(15deg);
+    }
+    to{
+        -webkit-transform: rotate(-15deg);
+        -webkit-transform-origin: center
+        center;
+    }
+}
+

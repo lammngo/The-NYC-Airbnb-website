@@ -1,0 +1,80 @@
+
+<html>
+<head><title> Access to the NYC Airbnb database </title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="title">
+    <a href="http://css1.seattleu.edu/~lngo1/dbtest/db.html"> The NYC Airbnb </a>
+</div>
+<div class="bear">
+    <a href="http://css1.seattleu.edu/~lngo1/dbtest/db.html">
+        <img src="teddybear.png" alt="hawaiian korean bear">
+    </a>
+</div>
+
+<p> Please select a table from the following to view its information: <p>
+
+<!-- You should replace the URL to PHP script in action with yours -->
+<form name = "f1" action = "http://css1.seattleu.edu/~lngo1/dbtest/db1.php" method = "post">  
+<!--    Table: <input type = "text" name = "table" id = "table" /> <br />
+    Key: <input type = "text" name = "pk" /> <br />
+    Value: <input type = "text" name = "val" /> <br /> -->
+    <select name = "entity" id = "entities">
+	<option> customers </option>
+	<option> hosts </option>
+	<option> property </option>
+	<option> transaction </option>
+	<option> thirdparties </option>
+	<option> reserve </option>
+	<option> own </option>
+	<option> post </option>
+    >/select> 
+<br />
+    <input type = "reset"  value = "Reset" />
+    <input type = "submit"  value = "Submit request" />
+</form>    
+
+<br />
+<p> Number of each type of rooms available: </p>
+
+<!-- You should replace the URL to PHP script in action with yours -->
+<form name = "f2" action = "http://css1.seattleu.edu/~lngo1/dbtest/db2.php" method = "post">  
+<!--    <input type = "checkbox" name = "color" value = "red"> Red <br /> -->
+    <input type = "radio" name = "ptype" id = "ptype1" value = "Entire"> Entire Room <br />
+    <input type = "radio" name = "ptype" id = "ptype2" value = "Shared"> Shared Room <br />
+    <input type = "radio" name = "ptype" id = "ptype3" value = "Private"> Private Room <br />
+	<br />
+    <input type = "reset"  value = "Reset" /> 
+    <input type = "submit"  value = "Submit request" /> 
+</form>   
+
+<br />
+
+<p> If you would like to delete a customer's info, please input the id of the customer: </p>
+
+<!-- You should replace the URL to PHP script in action with yours -->
+<form name = "f3" action = "http://css1.seattleu.edu/~lngo1/dbtest/db3.php" method = "post">
+    ID: <input type = "text" name = "cid" /> <br />
+	<br />
+	<input type ="reset" value = "Reset" />
+	<input type = "submit" value = "Submit request" /> 
+</form>
+
+<br />
+<p> Would you like to update the customer's name? Please input the ID and the new name for the customer. </p>
+
+<!-- You should replace the URL to PHP script in action with yours -->
+<form name = "f4" action = "http://css1.seattleu.edu/~lngo1/dbtest/db4.php" method = "post">
+    ID: <input type = "text" name = "cid" id = "cid" /> <br />
+    Name: <input type = "text" name = "cname" id = "cname" /> <br /> 
+	<br />
+	<input type ="reset" value = "Reset" />
+	<input type = "submit" value = "Submit request" /> 
+</form>
+
+
+</body>
+</html>
+
+    
